@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 13:49:50 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/05/25 15:17:20 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/05/26 19:21:01 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void Contact::FillContact()
 {
+	FirstName = "";
+	LastName = "";
+	Nickname = "";
+	PhoneNumber = "";
+	DarkestSecret = "";
 	while (FirstName.empty() || LastName.empty() || Nickname.empty()
 		|| PhoneNumber.empty() || DarkestSecret.empty())
 	{
