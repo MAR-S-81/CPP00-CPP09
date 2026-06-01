@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 16:46:44 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/05/28 18:56:25 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/06/01 17:06:08 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ class Fixed
         float   toFloat(void) const;
 };
 
-std::ostream &operator<<( std::ostream & o, Fixed const & i );
+std::ostream &operator << ( std::ostream & o, Fixed const & i );
 
 #endif
