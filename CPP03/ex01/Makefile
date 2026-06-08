@@ -1,4 +1,4 @@
-NAME        = Aaaaand_OPEN!
+NAME        = Serena_my_love!
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98
 

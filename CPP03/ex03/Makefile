@@ -1,4 +1,4 @@
-NAME        = Repetitive_work
+NAME        = Now_its_weird!
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98
 
