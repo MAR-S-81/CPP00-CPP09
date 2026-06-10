@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 17:47:17 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/06/09 17:47:47 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/06/10 14:11:11 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Cure : public AMateria
         Cure &operator=( Cure const & rhs );
         virtual ~Cure();
 
-		virtual AMateria* Cure::clone() const;
+		virtual AMateria* clone() const;
 		virtual void use(ICharacter& target);
 };
 

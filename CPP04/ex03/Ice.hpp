@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 16:37:03 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/06/09 17:47:23 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/06/10 14:11:07 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Ice : public AMateria
         Ice &operator=( Ice const & rhs );
         virtual ~Ice();
 
-		virtual AMateria* Ice::clone() const;
+		virtual AMateria* clone() const;
 		virtual void use(ICharacter& target);
 };
 
