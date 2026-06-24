@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 15:04:44 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/06/23 15:38:45 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/06/24 18:17:00 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int main() {
         
         alice.signForm(tax);
         
-        std::cout << "\nAprès tentative de signature :" << std::endl;
         std::cout << tax << std::endl;
     }
     catch (std::exception & e) 
