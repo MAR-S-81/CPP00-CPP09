@@ -1,4 +1,4 @@
-NAME        = Form_up_maggots!
+NAME        = Convertion_of_scalar_types
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98
 

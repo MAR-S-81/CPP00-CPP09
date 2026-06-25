@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 14:57:27 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/06/24 18:13:50 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/06/25 11:17:35 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,14 @@ bool IsInt(std::string str)
 
 bool IsFloat(std::string str)
 {
-    if (str.length() < 4 || str[str.length() - 1] != 'f')
+    if (str.length() < 4 || str[str.length() - 1] != 'f') {
         return false;
-
+	}
 	int start = 0;
     bool hasDot = false;
-    if (str[0] == '+' || str[0] == '-')
+    if (str[0] == '+' || str[0] == '-') {
 		start = 1;
-
+	}
     for (int i = start; i < (int)str.length() - 1; i++) {
         if (str[i] == '.') {
             if (hasDot)

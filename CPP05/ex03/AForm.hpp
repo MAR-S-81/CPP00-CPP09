@@ -22,11 +22,11 @@ class AForm
 private:
     const std::string _name;
 	bool _is_signed;
-	const int _grade_to_exec;
 	const int _grade_to_sign;
+	const int _grade_to_exec;
 public:
     AForm();
-	AForm(std::string name, int grade_to_signed, int grade_to_exec);
+	AForm(std::string name, int grade_to_sign, int grade_to_exec);
     AForm( AForm const &src );
     AForm &operator=( AForm const & rhs );
     virtual ~AForm();

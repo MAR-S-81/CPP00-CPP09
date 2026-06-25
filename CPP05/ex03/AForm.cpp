@@ -12,21 +12,21 @@
 
 #include "AForm.hpp"
 
-AForm::AForm() : _name("Default"), _is_signed(false), _grade_to_exec(1), _grade_to_sign(1) {
+AForm::AForm() : _name("Default"), _is_signed(false), _grade_to_sign(1), _grade_to_exec(1) {
 	if (_grade_to_exec < 1 || _grade_to_sign < 1)
         throw AForm::GradeTooHighException();
     if (_grade_to_exec > 150 || _grade_to_sign > 150)
         throw AForm::GradeTooLowException();
 }
 
-AForm::AForm(std::string name, int grade_to_exec, int grade_to_sign) : _name(name), _is_signed(false), _grade_to_exec(grade_to_exec), _grade_to_sign(grade_to_sign) {
+AForm::AForm(std::string name, int grade_to_sign, int grade_to_exec) : _name(name), _is_signed(false), _grade_to_sign(grade_to_sign), _grade_to_exec(grade_to_exec) {
 	if (_grade_to_exec < 1 || _grade_to_sign < 1)
         throw AForm::GradeTooHighException();
     if (_grade_to_exec > 150 || _grade_to_sign > 150)
         throw AForm::GradeTooLowException();
 }
 
-AForm::AForm( AForm const &src ) : _name(src._name), _is_signed(src._is_signed), _grade_to_exec(src._grade_to_exec), _grade_to_sign(src._grade_to_sign) {
+AForm::AForm( AForm const &src ) : _name(src._name), _is_signed(src._is_signed), _grade_to_sign(src._grade_to_sign), _grade_to_exec(src._grade_to_exec) {
 }
 
 AForm &AForm::operator=( AForm const &rhs ) {
