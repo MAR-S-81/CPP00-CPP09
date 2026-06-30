@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 14:57:27 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/06/25 11:17:35 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/06/30 12:08:46 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,13 +132,18 @@ void ScalarConverter::convert(std::string str) {
         	return;
         }
 		i = static_cast<int>(l);
-    	c = static_cast<char>(i);
         f = static_cast<float>(l);
         d = static_cast<double>(l);
-		if (!std::isprint(c))
-        	std::cout << "char: Non displayable" << std::endl;
-    	else
-        	std::cout << "char: '" << c << "'" << std::endl;
+		if (i < 0 || i > 127) {
+            std::cout << "char: impossible" << std::endl;
+        } 
+		else {
+            c = static_cast<char>(i);
+            if (!std::isprint(c))
+                std::cout << "char: Non displayable" << std::endl;
+            else
+                std::cout << "char: '" << c << "'" << std::endl;
+        }
         std::cout << "int: " << i << std::endl;
 		std::cout << "float:  " << f << ".0f" << std::endl;
 		std::cout << "double: " << d << ".0" << std::endl;
@@ -156,14 +161,16 @@ void ScalarConverter::convert(std::string str) {
         } 
         else {
             int i = static_cast<int>(f);
-            char c = static_cast<char>(i);
-            if (i < 0 || i > 127)
+            if (i < 0 || i > 127) {
                 std::cout << "char: impossible" << std::endl;
-            else if (!std::isprint(c))
-                std::cout << "char: Non displayable" << std::endl;
-            else
-                std::cout << "char: '" << c << "'" << std::endl;
-
+            } 
+            else {
+                char c = static_cast<char>(i);
+                if (!std::isprint(c))
+                    std::cout << "char: Non displayable" << std::endl;
+                else
+                    std::cout << "char: '" << c << "'" << std::endl;
+            }
             std::cout << "int: " << i << std::endl;
         }
         if (f == static_cast<int>(f)) {
@@ -185,16 +192,18 @@ void ScalarConverter::convert(std::string str) {
             std::cout << "double: " << d << std::endl;
             return;
         } 
-        else {
+       else {
             int i = static_cast<int>(d);
-            char c = static_cast<char>(i);
-            if (i < 0 || i > 127)
+            if (i < 0 || i > 127) {
                 std::cout << "char: impossible" << std::endl;
-            else if (!std::isprint(c))
-                std::cout << "char: Non displayable" << std::endl;
-            else
-                std::cout << "char: '" << c << "'" << std::endl;
-
+            } 
+            else {
+                char c = static_cast<char>(i);
+                if (!std::isprint(c))
+                    std::cout << "char: Non displayable" << std::endl;
+                else
+                    std::cout << "char: '" << c << "'" << std::endl;
+            }
             std::cout << "int: " << i << std::endl;
         }
         
