@@ -6,7 +6,7 @@
 /*   By: mchesnea <mchesnea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/29 15:29:18 by mchesnea          #+#    #+#             */
-/*   Updated: 2026/06/29 16:16:15 by mchesnea         ###   ########.fr       */
+/*   Updated: 2026/06/30 17:24:21 by mchesnea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ Array<T>::Array() : _elements(NULL), _n(0) {
 }
 
 template <typename T>
-Array<T>::Array(unsigned int grade) {
-	_n = grade;
+Array<T>::Array(unsigned int n) {
+	_n = n;
 	_elements = new T[_n]();
 }
 
