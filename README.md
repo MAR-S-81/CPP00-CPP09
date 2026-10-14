@@ -1,4 +1,4 @@
-This project has been created as part of the 42 curriculum by mchesnea.
+*This project has been created as part of the 42 curriculum by mchesnea.*
 
 # C++ Modules (CPP00 - CPP09)
 
