@@ -1,12 +1,12 @@
 This project has been created as part of the 42 curriculum by mchesnea.
 
-# C++ Modules (CPP00 - CPP09) — 42 School
+# C++ Modules (CPP00 - CPP09)
 
 A comprehensive journey through Object-Oriented Programming, memory management, generic programming, and standard algorithms, strictly conforming to the **C++98** standard.
 
 ---
 
-## 🛠️ General Constraints
+## General Constraints
 
 - **Language Standard:** C++98, compiled with `c++ -Wall -Wextra -Werror -std=c++98`.
 - **Memory Integrity:** Zero memory leaks allowed; verified with Valgrind / leaks.
@@ -15,7 +15,7 @@ A comprehensive journey through Object-Oriented Programming, memory management, 
 
 ---
 
-## 📦 Modules Overview
+## Modules Overview
 
 | Module | Core Subject | Key Concepts |
 | :--- | :--- | :--- |
@@ -32,7 +32,7 @@ A comprehensive journey through Object-Oriented Programming, memory management, 
 
 ---
 
-## 🚀 Build & Run
+## Build & Run
 
 Every exercise includes its own `Makefile` with standard rules (`all`, `clean`, `fclean`, `re`).
 
